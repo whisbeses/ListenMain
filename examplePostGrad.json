@@ -1,0 +1,12 @@
+{
+  "id"  : 1,
+  "user_id" : 1,
+  "text" : "I am scary of needles",
+  "background" : "picture",
+  "background_value" : {
+    "url" : "www.zzz.ccc"
+  },
+  "likes" : 1,
+  "helpful" : 0,
+  "notHelpful" : 1
+}
