@@ -1,0 +1,25 @@
+{
+  "name": "whispbeses",
+  "version": "1.0.0",
+  "description": "an anonomus sharing app for kids with diebetes",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whisbeses/serverNDatabase.git"
+  },
+  "author": "Sutton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whisbeses/serverNDatabase/issues"
+  },
+  "homepage": "https://github.com/whisbeses/serverNDatabase#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7"
+  }
+}
