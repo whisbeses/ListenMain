@@ -1,11 +1,12 @@
-const Sequelize = require('sequelize');
 const pg= require("pg");
+const Sequelize = require('sequelize');
 const login = require("./login");
 
-console.log(login);
-let postgres = new Sequelize("reviews", login.user, login.password, {
+
+
+let postgres = new Sequelize("post", login.user, login.password, {
   dialect: 'postgres',
-  host: '54.153.70.205',
+  host: 'localhost',
   port: 5432,
 });
 

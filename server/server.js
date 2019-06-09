@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const router = require("./router");
 
+const db = require("../database/postgres");
 const server = express();
 
 const port = process.env.PORT || 3000;

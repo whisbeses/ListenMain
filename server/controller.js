@@ -1,4 +1,4 @@
-
+const Models = require("../database/model");
 
 module.exports = {
   post : {
