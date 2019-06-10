@@ -5,7 +5,7 @@ module.exports = {
     readAll : (req,res)=>{
       Models.Posts.findAll({})
         .then((posts)=>{
-          res.send(data);
+          res.send(posts);
         })
         .catch(err=> res.send(err))
     },

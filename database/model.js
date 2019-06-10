@@ -6,7 +6,10 @@ const Posts = db.postgres.define("post", {
     type : Sequelize.STRING
   },
   background : {
-    type : Sequelize.STRING
+    type : Sequelize.STRING,
+    validate : {
+      isIn: [["gradient", "picture"]]
+    }
   },
   background_value : {
     type : Sequelize.STRING
