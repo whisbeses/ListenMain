@@ -25,7 +25,9 @@ class mainPage extends React.Component {
     return (
       <div className="mainContainer">
         <Header  switchPage={this.switchPage}/>
+        <div className="contentContainer">
         {this.state.page === "home" ? (<PostArea /> ): this.state.page === "game" ? (<ColorGame/>): (<div>Lets make a post </div>)}
+        </div>
       </div>
     )
   }
