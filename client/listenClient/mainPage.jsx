@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "./Header.jsx";
 import PostArea from "./Post.jsx";
-
+import ColorGame from "./ColorGame/app";
 
 class mainPage extends React.Component {
   constructor(){
@@ -25,7 +25,7 @@ class mainPage extends React.Component {
     return (
       <div className="mainContainer">
         <Header  switchPage={this.switchPage}/>
-        {this.state.page === "home" ? (<PostArea /> ): (<div>I am not home</div>)}
+        {this.state.page === "home" ? (<PostArea /> ): this.state.page === "game" ? (<ColorGame/>): (<div>Lets make a post </div>)}
       </div>
     )
   }
