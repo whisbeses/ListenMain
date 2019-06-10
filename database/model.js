@@ -1,13 +1,9 @@
 const Sequelize = require('sequelize');
 const db = require('./postgres');
 
-
-const Posts = db.postgres.define("Post", {
+const Posts = db.postgres.define("post", {
   text : {
     type : Sequelize.STRING
-  },
-  user_id : {
-    type : Sequelize.INTEGER
   },
   background : {
     type : Sequelize.STRING
@@ -24,22 +20,13 @@ const Posts = db.postgres.define("Post", {
   notHelpful : {
     type : Sequelize.INTEGER
   }
+},{
+  timestamps :false,
 });
 
-const User = db.postgres.define("User", {
-  name :  {
-    type : Sequelize.STRING
-  },
-  password :  {
-    type : Sequelize.STRING
-  }
-})
-
-
-Posts.belongsTo(User, {foreignKey: "user_id"});
+db.postgres.sync();
 
 
 module.exports = {
-  Posts,
-  User
+  Posts
 }
